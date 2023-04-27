@@ -8,40 +8,6 @@ body{
 
 }
 
-.content{
-  height: 400px;
-  width: 700px;
-  overflow: hidden;
-  position: relative;
-}
-
-.content .images{
-  height: 100%;
-  width: 100%;
-}
-
-.images img{
-  height: 100%;
-  width: 100%;
-}
-
-.content .slide{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  border: 2px white;
-  height: 45px;
-  width: 45px;
-  cursor: pointer;
-}
-.slide span{
-  font-size: 35px;
-  color: white;
-  line-height: 41px;
-
-}
-
-.content .right{
-  right: 0;
-
+#interesting{
+  font-style: oblique;
 }
