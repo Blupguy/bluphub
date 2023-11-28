@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>The Hub</title>
+    <style>
+    body{
+      background-color: #121212;
+    }
+        .gallery-container {
+            max-width: 800px;
+            width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .gallery-image {
+            max-width: 100%;
+            width: 800px;
+            height: 800px;
+            max-height: 800px;
+            user-select: none;
+            user-drag;
+            -webkit-user-drag: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+
+        .image-description {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            font-family: monospace;
+        }
+
+        .show-description {
+            opacity: 1;
+        }
+
+        .navigation-arrows {
+            position: absolute;
+            bottom: -50px; /* Adjust the distance from the bottom as needed */
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .navigation-arrows img {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        .menu {
+            position: absolute;
+            top: 10px;
+            left: 150%;
+            z-index: 100;
+        }
+
+        .menu-button {
+            background-color: transparent;
+            border: none;
+            color: #333;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .social-links {
+            display: none;
+            position: absolute;
+            top: 40px;
+            right: 0;
+            background-color: transparent;
+            border: none;
+            padding: 10px;
+            list-style-type: none;
+            text-decoration: none;
+        }
+
+        .social-links li {
+          margin-top: 10px;
+            margin-bottom: 24px;
+            list-style: none;
+            font-family: monospace;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .menu-button:focus + .social-links,
+        .social-links:focus {
+            display: none;
+        }
+
+        a{
+          padding: 12px 24px;
+          text-decoration: none;
+          font-family: monospace;
+          color:red;
+        }
+        a:hover{
+          background-color: #ddd;
+        }
+
+
+    </style>
+</head>
+<body>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CD7YML9EDR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CD7YML9EDR');
+</script>
+    <div class="gallery-container">
+        <img class="gallery-image" src="Images/Cow.png" alt="Artwork 1" onclick="toggleDescription()">
+
+        <div class="image-description">
+            <p id="description">A drawing of some livestock, i dabbled in realism and this was one of the results</p>
+        </div>
+
+        <div class="navigation-arrows">
+            <a href="#" class="previous" onclick="showPrevious()">&#8249;</a>
+            <a href="#" class="next" onclick="showNext()">&#8250;</a>
+        </div>
+
+        <div class="menu">
+            <button class="menu-button" onclick="toggleSocialLinks()">Links</button>
+            <ul class="social-links" tabindex="-1">
+                <li><a href="https://www.twitch.tv/blupman12" target="_blank">Twitch</a></li>
+                <li><a href="https://www.youtube.com/channel/UCWnvFIhrGF1bj604dSidEmg" target="_blank">Youtube</a></li>
+                <li><a href="https://www.tiktok.com/@hibatman12" target="_blank">TikTok</a></li>
+                <li><a href="https://femboylover.art" target="_blank">FemboyLover</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        var currentImageIndex = 0;
+        var images = [
+            "Images/Cow.png",
+            "Images/tpose.png",
+            "Images/yeehawfrog.png",
+            "Images/blupFrog.png",
+            "Images/froog].png",
+            "Images/Miata.png",
+            "Images/OldPNGTuber.png",
+            "Images/sadfrog.png",
+            "Images/sunset.png",
+            "Images/TLsDuck.png",
+            "Images/frog.png",
+            "Images/prettysunset.jpg",
+            "Images/sun.jpg",
+            "Images/mountain.jpg",
+            "Images/Yoru.jpg",
+            // Add more image paths as needed
+        ];
+
+        var descriptions = [
+            "A drawing of some livestock, i dabbled in realism and this was one of the results",
+            "A portrait of how i view myself, old, frail but also T-posing",
+            "yeehaw froggy!!!",
+            "frog",
+            "A wizard frog i drew for some reason",
+            "My current PNGTuber which is an MX-5 NA which had popup headlights which i really want, its my dream car",
+            "My old PNGTuber which was a frog that i kinda miss but im happy with my current miata PNG",
+            "A frog that is sad because Klondike discontinued the Chocotaco, arguably the best ice cream they made",
+            "A terrible drawing of a sunset, i really like watching the sunset so i tried to draw it",
+            "duck",
+            "A frog that is content with its life, nothing bothering him",
+            "A picture of the sunset i took, for but a brief moment in life, i was happy",
+            "A picture of the turnagain arm and sun, this was a really sketchy drive cuz i had like 2 gallons of gas which was barely enough to get to a gas station in town",
+            "A picture of some mountains, i got lost going up the road and thought it was a pretty view",
+            "my shit ass cat that used to pee on my bed all the time, his name is Yoru and i love him very much",
+            // Add more descriptions corresponding to the images
+        ];
+
+        function showPrevious() {
+            if (currentImageIndex === 0) {
+                currentImageIndex = images.length - 1;
+            } else {
+                currentImageIndex--;
+            }
+            updateImage();
+        }
+
+        function showNext() {
+            if (currentImageIndex === images.length - 1) {
+                currentImageIndex = 0;
+            } else {
+                currentImageIndex++;
+            }
+            updateImage();
+        }
+
+        function toggleDescription() {
+            var description = document.querySelector('.image-description');
+            description.classList.toggle('show-description');
+        }
+
+        function toggleSocialLinks() {
+            var socialLinks = document.querySelector('.social-links');
+            socialLinks.style.display = (socialLinks.style.display === 'block') ? 'none' : 'block';
+        }
+
+        function updateImage() {
+            var galleryImage = document.querySelector('.gallery-image');
+            galleryImage.src = images[currentImageIndex];
+            galleryImage.alt = 'Artwork ' + (currentImageIndex + 1);
+
+            var description = document.querySelector('#description');
+            description.textContent = descriptions[currentImageIndex];
+        }
+    </script>
+</body>
+</html>
