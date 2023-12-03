@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
   loadingMessage.innerHTML = getRandomMessage();
 
   var interval = setInterval(function () {
-    progress += 1; // Adjust the speed of the loading bar
+    progress += 2; // Adjust the speed of the loading bar
     loadingBar.style.width = progress + "%";
 
     // Update usefulmessage based on progress

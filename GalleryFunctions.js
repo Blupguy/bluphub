@@ -15,6 +15,13 @@ var images = [
     "Images/sun.jpg",
     "Images/mountain.jpg",
     "Images/Yoru.jpg",
+    "Images/PrettySky.jpg",
+    "Images/cookiedough.jpg",
+    "Images/goofycar.png",
+    "Images/YoruStare.png",
+    "Images/goofyahhcat.jpg",
+    "Images/NightSky.jpg",
+    "Images/TestSquatchy.gif"
     // Add more image paths as needed
 ];
 
@@ -34,6 +41,14 @@ var descriptions = [
     "A picture of the turnagain arm and sun, this was a really sketchy drive cuz i had like 2 gallons of gas which was barely enough to get to a gas station in town",
     "A picture of some mountains, i got lost going up the road and thought it was a pretty view",
     "my shit ass cat that used to pee on my bed all the time, his name is Yoru and i love him very much",
+    "northern lights :)",
+    "Bomb ass cookie dough that i ate raw",
+    "The head on shot, possible one of the most aggressive shots you can make of a car",
+    "He knows what you did",
+    "Goofy ahh cat",
+    "Pretty night sky in Arizona :)",
+    "Test gif i made",
+
     // Add more descriptions corresponding to the images
 ];
 
