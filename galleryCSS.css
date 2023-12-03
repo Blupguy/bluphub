@@ -1,9 +1,9 @@
 body{
-  background-color: #121212;
+    background-color: #121212
 }
     .gallery-container {
         max-width: 800px;
-        width: 800px;
+        width: 100%;
         margin: 0 auto;
         position: relative;
     }
@@ -13,8 +13,8 @@ body{
         width: 800px;
         height: 800px;
         max-height: 800px;
+        cursor: pointer;
         user-select: none;
-        user-drag;
         -webkit-user-drag: none;
         -moz-user-select: none;
         -webkit-user-select: none;
@@ -43,7 +43,7 @@ body{
     .navigation-arrows {
         position: absolute;
         bottom: -50px; /* Adjust the distance from the bottom as needed */
-        left: 50%;
+       left: 50%;
         transform: translateX(-50%);
     }
 
@@ -53,17 +53,25 @@ body{
         cursor: pointer;
     }
 
+    .previous {
+      left: 10px;
+    }
+
+    .next{
+      right: 10px;
+    }
+
     .menu {
         position: absolute;
         top: 10px;
-        left: 150%;
+        left: 155%;
         z-index: 100;
     }
 
     .menu-button {
         background-color: transparent;
         border: none;
-        color: #333;
+        color: #242424;
         font-size: 20px;
         cursor: pointer;
     }
@@ -92,6 +100,15 @@ body{
     .menu-button:focus + .social-links,
     .social-links:focus {
         display: none;
+    }
+
+    .copyright{
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      margin: 10px;
+      color: #242424;
+      font-family:monospace;
     }
 
     a{
