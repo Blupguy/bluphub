@@ -117,11 +117,11 @@
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CD7YML9EDR"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-CD7YML9EDR');
+// JavaScript example to remove .html extension
+if (window.location.pathname.endsWith('.html')) {
+    var newURL = window.location.pathname.replace(/\.html$/, '');
+    window.history.replaceState({}, document.title, newURL);
+}
 </script>
     <div class="gallery-container">
         <img class="gallery-image" src="Images/Cow.png" alt="Artwork 1" onclick="toggleDescription()">

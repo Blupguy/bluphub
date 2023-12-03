@@ -14,7 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
     "Step into our gallery: where the art is as out of this world as our WiFi connection.",
     "Welcome, player one! Our art gallery—where pixels meet peculiar. ",
     "Our art is like a video game tutorial: confusing at first, but you'll get the hang of it... maybe.",
-    "Amidst the cosmic dance of existence, our gallery seeks to capture fleeting moments of human emotion—a tapestry of joy, sorrow, and the quiet echoes of introspection.",
+    "Feet and boy tummy are necessary for a balanced life.",
+    "eat food",
+
   ];
 
   // Function to get a random message
