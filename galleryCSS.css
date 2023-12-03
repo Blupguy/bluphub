@@ -1,0 +1,105 @@
+body{
+  background-color: #121212;
+}
+    .gallery-container {
+        max-width: 800px;
+        width: 800px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .gallery-image {
+        max-width: 100%;
+        width: 800px;
+        height: 800px;
+        max-height: 800px;
+        user-select: none;
+        user-drag;
+        -webkit-user-drag: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+
+    .image-description {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        font-family: monospace;
+    }
+
+    .show-description {
+        opacity: 1;
+    }
+
+    .navigation-arrows {
+        position: absolute;
+        bottom: -50px; /* Adjust the distance from the bottom as needed */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .navigation-arrows img {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .menu {
+        position: absolute;
+        top: 10px;
+        left: 150%;
+        z-index: 100;
+    }
+
+    .menu-button {
+        background-color: transparent;
+        border: none;
+        color: #333;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .social-links {
+        display: none;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        background-color: transparent;
+        border: none;
+        padding: 10px;
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    .social-links li {
+      margin-top: 10px;
+        margin-bottom: 24px;
+        list-style: none;
+        font-family: monospace;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    .menu-button:focus + .social-links,
+    .social-links:focus {
+        display: none;
+    }
+
+    a{
+      padding: 12px 24px;
+      text-decoration: none;
+      font-family: monospace;
+      color:red;
+    }
+    a:hover{
+      background-color: #ddd;
+    }
