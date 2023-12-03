@@ -21,12 +21,24 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -100%); /* Adjust the translateY value */
+  transform: translate(-50%, -150%); /* Adjust the translateY value */
   text-align: center;
 }
 
 #loading-message {
   color: #CCCCCC; /* Adjust text color */
+}
+
+#useful-messages-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%); /* Adjust the translateY value */
+  text-align: center;
+}
+
+#useful-message {
+  color: #CCCCCC;
 }
 
 #loading-bar {
