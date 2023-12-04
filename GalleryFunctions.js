@@ -19,7 +19,7 @@ var images = [
     "Images/cookiedough.jpg",
     "Images/goofycar.png",
     "Images/YoruStare.png",
-    "Images/goofyahhcat.jpg",
+    "Images/goofyahhcat.png",
     "Images/NightSky.JPG",
     "Images/TestSquatchy.gif"
     // Add more image paths as needed
