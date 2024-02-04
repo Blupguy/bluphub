@@ -17,7 +17,7 @@ var images = [
     "Images/Yoru.jpg",
     "Images/PrettySky.JPG",
     "Images/cookiedough.JPG",
-    "Images/goofycar.png",
+    "Images/goofycar.jpg",
     "Images/YoruStare.png",
     "Images/goofyahhcat.JPG",
     "Images/NightSky.JPG",
