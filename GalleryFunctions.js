@@ -8,7 +8,7 @@ var images = [
     "Images/Miata.png",
     "Images/OldPNGTuber.png",
     "Images/sadfrog.png",
-    "Images/sunset.png",
+    "Images/sunset.jpg",
     "Images/TLsDuck.png",
     "Images/frog.png",
     "Images/prettysunset.jpg",
@@ -22,7 +22,6 @@ var images = [
     "Images/goofyahhcat.JPG",
     "Images/NightSky.JPG",
     "Images/TestSquatchy.gif"
-    // Add more image paths as needed
 ];
 
 var descriptions = [
@@ -48,8 +47,6 @@ var descriptions = [
     "Goofy ahh cat",
     "Pretty night sky in Arizona :)",
     "Test gif i made",
-
-    // Add more descriptions corresponding to the images
 ];
 
 function showPrevious() {
