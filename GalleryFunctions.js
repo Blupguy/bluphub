@@ -43,7 +43,7 @@ var descriptions = [
     "my shit ass cat that used to pee on my bed all the time, his name is Yoru and i love him very much",
     "northern lights :)",
     "Bomb ass cookie dough that i ate raw",
-    "The head on shot, possible one of the most aggressive shots you can make of a car",
+    "The head on shot, possible one of the most aggressive shots you can take of a car",
     "He knows what you did",
     "Goofy ahh cat",
     "Pretty night sky in Arizona :)",
