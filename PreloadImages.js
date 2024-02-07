@@ -7,7 +7,7 @@ var images = [
     "Images/Miata.png",
     "Images/OldPNGTuber.png",
     "Images/sadfrog.png",
-    "Images/sunset.png",
+    "Images/sunset.jpg",
     "Images/TLsDuck.png",
     "Images/frog.png",
     "Images/prettysunset.jpg",
@@ -21,9 +21,7 @@ var images = [
     "Images/goofyahhcat.JPG",
     "Images/NightSky.JPG",
     "Images/TestSquatchy.gif"
-
   ];
-
   image.forEach(function(imageSrc) => {
       var img = new Images();
       img.src = imageSrc;

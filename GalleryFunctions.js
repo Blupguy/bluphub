@@ -77,11 +77,26 @@ function toggleSocialLinks() {
     socialLinks.style.display = (socialLinks.style.display === 'block') ? 'none' : 'block';
 }
 
-function updateImage() {
+function updateImage(() {
     var galleryImage = document.querySelector('.gallery-image');
     galleryImage.src = images[currentImageIndex];
     galleryImage.alt = 'Artwork ' + (currentImageIndex + 1);
 
+    setTimeout()=>{
+      currentImageIndex = newIndex;
+      galleryImage.src = images[currentImageIndex];
+      galleryImage.style.opacity = 1;
+    }, 500);
     var description = document.querySelector('#description');
     description.textContent = descriptions[currentImageIndex];
 }
+
+document.getElementById('previous').addEventListener('click', ()=>{
+  const newIndex = currentImageIndex == 0? Images.length - 1 : currentImageIndex -1;
+  updateImage(newIndex);
+});
+
+document.getElementById('next').addEventListener('click', ()=>{
+  const newIndex = currentImageIndex == 0? images.length - : currentImageIndex -1;
+  updateImage(newIndex)
+});
