@@ -81,4 +81,7 @@ function updateImage() {
     var galleryImage = document.querySelector('.gallery-image');
     galleryImage.src = images[currentImageIndex];
     galleryImage.alt = 'Artwork ' + (currentImageIndex + 1);
+
+    var description = document.querySelector('#description');
+    description.textContent = descriptions[currentImageIndex];
 }
