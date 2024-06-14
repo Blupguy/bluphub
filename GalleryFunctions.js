@@ -21,7 +21,11 @@ var images = [
     "Images/YoruStare.png",
     "Images/goofyahhcat.JPG",
     "Images/NightSky.JPG",
-    "Images/TestSquatchy.gif"
+    "Images/TestSquatchy.gif",
+    "Images/Butte.png",
+    "Images/PrettyFlower.png",
+    "Images/car.png",
+    "Images/mewing.png"
 ];
 
 var descriptions = [
@@ -47,6 +51,10 @@ var descriptions = [
     "Goofy ahh cat",
     "Pretty night sky in Arizona :)",
     "Test gif i made",
+    "The Butte",
+    "Pretty flower i saw on a hike:)",
+    "Stupidest car in the Anchorage area",
+    "piss boy(whomst i love very much)"
 ];
 
 function showPrevious() {
