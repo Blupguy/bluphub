@@ -22,10 +22,10 @@ var images = [
     "Images/goofyahhcat.JPG",
     "Images/NightSky.JPG",
     "Images/TestSquatchy.gif",
-    "Images\Butte.png",
-    "Images\PrettyFlower.png",
-    "Images\car.png",
-    "Images\mewing.png"
+    "Images/Butte.png",
+    "Images/PrettyFlower.png",
+    "Images/car.png",
+    "Images/mewing.png"
 ];
 
 var descriptions = [
